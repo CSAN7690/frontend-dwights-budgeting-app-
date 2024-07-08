@@ -1,10 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getTransaction, deleteTransaction } from '../services/api';
 import './Show.css';
 
 const Show = () => {
-    // Get the transaction ID from the URL parameters
     const { id } = useParams();
     const navigate = useNavigate();
     const [transaction, setTransaction] = useState(null);

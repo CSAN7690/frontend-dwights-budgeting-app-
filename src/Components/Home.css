@@ -1,62 +1,128 @@
-/* General style */
+/* General Styles */
 body {
-    font-family: Arial, sans-sarif;
-    margin: 0;
-    padding: 0;
-    background-color: #F6DCAC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F6DCAC; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-    border: 2px solid #01204E;
-    border-radius: 10px;
-    background-color: white;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid #01204E; 
+  border-radius: 10px;
+  background-color: white; 
 }
 
-/* Home's Styles */
+/* Home Component Styles */
 .home {
-    padding: 2rem;
-  }
+  padding: 2rem;
+}
 
-  .toal-text {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #028391;
-  }
+.total-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #028391; 
+}
 
-  .transactions-list {
-    list-style: none;
-    padding: 0;
-  }
 
-  .transaction-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #ddd;
-    justify-content: center; 
-  }
-  
-  .transaction-item span,
-  .transaction-item a {
-    flex: 1;
-    text-align: center;
-    color: #01204E; 
-  }
-  
-  .transaction-item a {
-    color: #028391; 
-    text-decoration: none;
-  }
-  
-  .transaction-item a:hover {
-    text-decoration: underline;
-  }
+.transactions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  justify-content: center; 
+}
+
+.transaction-item span,
+.transaction-item a {
+  flex: 1;
+  text-align: center;
+  color: #01204E; 
+}
+
+.transaction-item a {
+  color: #028391; 
+  text-decoration: none;
+}
+
+.transaction-item a:hover {
+  text-decoration: underline;
+}
+
+/* Show Component Styles */
+.show {
+  padding: 2rem;
+}
+
+.show h2 {
+  margin-bottom: 1rem;
+}
+
+.show p {
+  margin: 0.5rem 0;
+}
+
+.show button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #FAA968; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show button:hover {
+  background-color: #F85525; 
+}
+
+/* New and Edit Component Styles */
+.new, .edit {
+  padding: 2rem;
+}
+
+.new h2, .edit h2 {
+  margin-bottom: 1rem;
+}
+
+.new form, .edit form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.new form label, .edit form label {
+  margin-bottom: 0.5rem;
+}
+
+.new form input, .edit form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.new form button, .edit form button {
+  padding: 0.5rem 1rem;
+  background-color: #FAA968; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new form button:hover, .edit form button:hover {
+  background-color: #F85525; 
+}

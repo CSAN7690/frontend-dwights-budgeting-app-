@@ -1,26 +1,27 @@
 .show {
-    padding: 2rem;
-  }
-  
-  .show h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .show p {
-    margin: 0.5rem 0;
-  }
-  
-  .show button {
-    margin-right: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #FAA968;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .show button:hover {
-    background-color: #F85525;
-  }
-  
+  padding: 2rem;
+}
+
+.show h2 {
+  margin-bottom: 1rem;
+}
+
+.show p {
+  margin: 0.5rem 0;
+  color:darkblue;
+  font-weight: bold;
+}
+
+.show button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show button:hover {
+  background-color: #0088cc;
+}

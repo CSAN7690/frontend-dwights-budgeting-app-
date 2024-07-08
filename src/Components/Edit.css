@@ -1,45 +1,35 @@
 .edit {
-    padding: 2rem;
-  }
-  
-  .edit h2 {
-    margin-bottom: 1rem;
-    color: darkblue;
-  }
-  
-  .edit form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .edit form label {
-    margin-bottom: 1.5rem;
-    color: darkblue;
-    font-size: 18px;
-    font-style: oblique;
-    font-weight: bold;
-  }
-  
-  .edit form label span {
-    display: inline-block;
-    width: 100px;
-  }
-  
-  .edit form input {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .edit form button {
-    padding: 0.5rem 1rem;
-    background-color: #00aaff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .edit form button:hover {
-    background-color: #0088cc;
-  }
+  padding: 2rem;
+}
+
+.edit h2 {
+  margin-bottom: 1rem;
+}
+
+.edit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit form label {
+  margin-bottom: 0.5rem;
+}
+
+.edit form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.edit form button {
+  padding: 0.5rem 1rem;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit form button:hover {
+  background-color: #0088cc;
+}

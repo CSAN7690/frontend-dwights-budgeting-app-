@@ -7,7 +7,10 @@ const Home = () => {
     const [transactions, setTransactions] = useState([]);
 
     useEffect(() => {
-        getTransactions().then(data => setTransactions(data));
+        getTransactions().then(data => {
+            console.log("Transactions fetched:", data);
+            setTransactions(data);
+        });
     }, []);
 
     const total = transactions.reduce((sum, transaction) => sum + Number(transaction.amount), 0);

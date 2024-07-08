@@ -29,10 +29,10 @@ const Edit = () => {
 
     return (
         <div className="edit">
-            <h2>Edit item</h2>
+            <h2>Edit Transaction</h2>
             <form onSubmit={handleSubmit}>
                 <label>
-                    <span>Date</span>
+                    Date
                     <input
                         type="date"
                         name="date"
@@ -42,7 +42,7 @@ const Edit = () => {
                     />
                 </label>
                 <label>
-                    <span>Name</span>
+                    Name
                     <input
                         type="text"
                         name="item_name"
@@ -52,7 +52,7 @@ const Edit = () => {
                     />
                 </label>
                 <label>
-                    <span>Amount</span>
+                    Amount
                     <input
                         type="number"
                         name="amount"
@@ -62,7 +62,7 @@ const Edit = () => {
                     />
                 </label>
                 <label>
-                    <span>From</span>
+                    From
                     <input
                         type="text"
                         name="from"
@@ -71,7 +71,17 @@ const Edit = () => {
                         required
                     />
                 </label>
-                <button type="submit">Update Item</button>
+                <label>
+                    Category
+                    <input
+                        type="text"
+                        name="category"
+                        value={transaction.category}
+                        onChange={handleChange}
+                        required
+                    />
+                </label>
+                <button type="submit">Update Transaction</button>
             </form>
         </div>
     );
