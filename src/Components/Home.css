@@ -1,0 +1,62 @@
+/* General style */
+body {
+    font-family: Arial, sans-sarif;
+    margin: 0;
+    padding: 0;
+    background-color: #F6DCAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #01204E;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Home's Styles */
+.home {
+    padding: 2rem;
+  }
+
+  .toal-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #028391;
+  }
+
+  .transactions-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+    justify-content: center; 
+  }
+  
+  .transaction-item span,
+  .transaction-item a {
+    flex: 1;
+    text-align: center;
+    color: #01204E; 
+  }
+  
+  .transaction-item a {
+    color: #028391; 
+    text-decoration: none;
+  }
+  
+  .transaction-item a:hover {
+    text-decoration: underline;
+  }
