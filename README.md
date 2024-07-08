@@ -1,6 +1,6 @@
 # Dwight's Budgeting App [FrontEnd]
 
-()
+![Dwight's Budgeting App](https://github.com/CSAN7690/frontend-dwights-budgeting-app-/blob/main/src/assets/Budget%20App%20.png?raw=true)
 
 ## Project Description
 
