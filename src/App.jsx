@@ -1,10 +1,11 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css'
-import NavBar from './Components/Navbar';
+import NavBar from './Components/NavBar';
 import Home from './Components/Home';
-import Home from './Components/Home';
+import Show from './Components/Show';
 import New from './Components/New';
+import Edit from './Components/Edit'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/transactions" element={<Home />} />
         <Route path="/transactions/:id" element={<Show />} />
         <Route path="/transactions/new" element={<New />} />
+        <Route path="/transactions/:id/edit" element={<Edit />} />
       </Routes>
     </div>
   )
