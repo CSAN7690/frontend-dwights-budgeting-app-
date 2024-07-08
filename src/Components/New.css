@@ -1,0 +1,45 @@
+.new {
+    padding: 2rem;
+  }
+  
+  .new h2 {
+    margin-bottom: 1rem;
+    color: darkblue;
+  }
+  
+  .new form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new form label {
+    margin-bottom: 1.5rem;
+    color: darkblue;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: bold; 
+  }
+  
+  .new form label span {
+    display: inline-block;
+    width: 100px; 
+  }
+  
+  .new form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .new form button {
+    padding: 0.5rem 1rem;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new form button:hover {
+    background-color: #0088cc;
+  }
