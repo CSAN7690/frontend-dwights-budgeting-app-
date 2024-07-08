@@ -1,32 +1,24 @@
-
 import React from 'react';
-import { Routes, Route, Navigate, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-import NavBar from './Components/NavBar';
-import Home from './Components/Home';
-import Show from './Components/Show';
-import New from './Components/New';
-import Edit from './Components/Edit';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import Show from './components/Show';
+import New from './components/New';
+import Edit from './components/Edit';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="container">
-        <NavBar />
-        <Routes>
-          {/* Redirect to transactions list */}
-          <Route path="/" element={<Navigate to="/transactions" replace />} />
-          {/* Route to transactions list */}
-          <Route path="/transactions" element={<Home />} />
-          {/* Route to create new transaction */}
-          <Route path="/transactions/new" element={<New />} />
-          {/* Route to view single transaction */}
-          <Route path="/transactions/:id" element={<Show />} />
-          {/* Route to edit transaction */}
-          <Route path="/transactions/:id/edit" element={<Edit />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/transactions" replace />} />
+        <Route path="/transactions" element={<Home />} />
+        <Route path="/transactions/new" element={<New />} />
+        <Route path="/transactions/:id" element={<Show />} />
+        <Route path="/transactions/:id/edit" element={<Edit />} />
+      </Routes>
+    </div>
   );
 }
 
