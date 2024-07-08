@@ -1,11 +1,11 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-import NavBar from './Components/NavBar';
-import Home from './Components/Home';
-import Show from './Components/Show';
-import New from './Components/New';
-import Edit from './Components/Edit';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import Show from './components/Show';
+import New from './components/New';
+import Edit from './components/Edit';
 
 function App() {
   return (
