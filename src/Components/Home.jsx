@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getTransactions } from '../services/api';
 import './Home.css';
 
 const Home = () => {
     const [transactions, setTransactions] = useState([]);
 
     useEffect(() => {
-        getTransactions().then(data => {
-            console.log("Transactions fetched:", data);
-            setTransactions(data);
-        });
+        fetch(`${import.meta.env.VITE_BASE_URL}/transactions`)
+            .then(response => response.json())
+            .then(data => {
+                console.log("Transactions fetched:", data);
+                setTransactions(data);
+            })
+            .catch(error => console.error('Error fetching transactions:', error));
     }, []);
 
     const total = transactions.reduce((sum, transaction) => sum + Number(transaction.amount), 0);
